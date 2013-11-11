@@ -5,7 +5,7 @@ public class Calculator {
 	private float number2;
 	private int operation;
 	private StringBuilder message = new StringBuilder("");
-	int[] error = {0,0};// коды ошибок, 1-й элемент - ошибка в 1-м числе, 2-й элемент ошибка во втором числе
+	int[] error = {0,0};// коды ошибок, 1-й элемент - ошибка в первомм числе, 2-й элемент ошибка во втором числе
 						// 0 - все хорошо
 						// 1 - неправильный формат
 						// 2 - переполнение
