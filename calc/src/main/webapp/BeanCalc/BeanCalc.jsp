@@ -25,7 +25,9 @@
 		<input type="text" name="number2" value="<%= calculator.getNumber2() %>" />
 		<button name="action" value="calc">Поcчитать</button>
 		<input type="text" name="res" readonly="readonly" value="<%= calculator.calculate() %>">
-		<br><%= calculator.message() %>		
+		<br><%= calculator.message() %>	
+		<br>
+		<br><a href="../index.jsp">На главную</a>	
 
 	</div>
 </form>

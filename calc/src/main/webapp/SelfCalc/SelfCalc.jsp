@@ -52,12 +52,12 @@ String operationSelectedMarker(int operationID){
 			<option value="<%= OPERATION_DIVIDE %>" <%= operationSelectedMarker(OPERATION_DIVIDE) %>>:</option>
 		</select>
 		<input type="text" name="number2" value="<%= n2 %>" />
-		<button name="action" value="calc">пошчитать</button>
+		<button name="action" value="calc">Посчитать</button>
 		<input type="text" name="res" readonly="readonly" value="<%= result %>">
 		
 	</div>
 </form>
 <br>
-<a href="BeanCalc.html">BeanCalc</a>
+<a href="../index.jsp">На главную</a>
 </body>
 </html>
