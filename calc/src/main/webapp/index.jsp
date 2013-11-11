@@ -7,8 +7,8 @@
 <title>Главная</title>
 </head>
 <body>
-<a href="SelfCalc/SelfCalc.jsp">JSP калькулятор одним файлом</a><br>
-<a href="BeanCalc/BeanCalc.jsp">JSP калькулятор</a>
+<a href="SelfCalc/SelfCalc.jsp">JSP калькулятор</a><br>
+<a href="BeanCalc/BeanCalc.jsp">JSP калькулятор c какой-никакой проверкой</a>
 
 </body>
 </html>
