@@ -8,7 +8,7 @@
 </head>
 <body>
 <a href="SelfCalc/SelfCalc.jsp">JSP калькулятор</a><br>
-<a href="BeanCalc/BeanCalc.jsp">JSP калькулятор c какой-никакой проверкой</a>
-
+<a href="BeanCalc/BeanCalc.jsp">JSP калькулятор c какой-никакой проверкой</a><br>
+<a href="ScriptCalc/ScriptCalc.html">JavaScript калькулятор</a>
 </body>
 </html>

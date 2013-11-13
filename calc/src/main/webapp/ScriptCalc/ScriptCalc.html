@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>JavaScript калькулятор</title>
+</head>
+	<script>
+		function calculate(){
+			var n1 = +number1.value;
+			var n2 = +number2.value;
+			var op = +operation.options[operation.selectedIndex].value;
+			var res = 0;
+			if (isNaN(n1)||isNaN(n2)) {
+				alert("Операнды введены неправильно.");
+				n1 = number1.value; // чтобы сохранился неправильно введенный текст вместо "NaN"
+				n2 = number2.value;
+				res = ""; // Пустой res - операция не выполнилась.
+			}
+			else{
+				switch (op){
+				case 1:{
+					res = n1 + n2;
+					break;
+				}
+				case 2:{
+					res = n1 - n2;
+					break;
+				}
+				case 3:{
+					res = n1 * n2;
+					break;
+				}
+				case 4:{
+					if (n2 != 0) res = n1 / n2;
+					else{
+						res = "";
+						alert("Невозможная операция: деление на 0.");
+					}
+					break;
+				}		
+				}
+			}
+			number1.value = n1; // В случае не введения операнда подставит нули,
+			number2.value = n2; // а также преобразует длинные числа
+			result.value = res;
+		}
+  	</script>
+<body>
+<form action="">
+	<div>
+		<input id="number1" type="text" name="number1"/>
+		<select id="operation" name="operation">
+			<option value="1" selected>+</option>
+			<option value="2">-</option>
+			<option value="3">x</option>
+			<option value="4">:</option>
+		</select>
+		<input id="number2" type="text" name="number2"/>
+		<input type="button" name="action" onclick="calculate()" value="Посчитать"/>
+		<input id="result" type="text" name="result" readonly="readonly">
+		<br>
+		<br><a href="../index.jsp">На главную</a>	
+
+	</div>
+</form>
+</body>
+</html>
