@@ -93,6 +93,7 @@ public class Calculator {
 	
 	public String getNumber2(){
 		String num2 = String.valueOf(number2);
+                
 		if (!num2.contains("E")) {
 			return num2.replaceAll("\\.?0*$", "");
 		} else return num2;
