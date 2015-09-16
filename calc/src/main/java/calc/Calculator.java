@@ -86,7 +86,6 @@ public class Calculator {
 	
 	public String getNumber1(){
 		String num1 = String.valueOf(number1);
-		System.out.println("just test");
                 if (!num1.contains("E")) {
 			return num1.replaceAll("\\.?0*$", ""); // удаляем лишние нули после точки
 		} else return num1;
